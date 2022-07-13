@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-counter-apps
+spec: 
+  replicas: 3
+  selector: 
+    matchLabels:
+      app: go-counter-apps
+    template: 
+      metadata:
+       labels:
+         app: go-counter-app
+      spec:
+        containers: 
+          - name: go-counter-app
+            image: <your_docker_username>/<your_docker_repository>:latest
+            imagePullPolicy: IfNotPresent
+            ports:
+              - containerPort: 8080
