@@ -7,7 +7,7 @@ this an api for counting words,characters,characters without space,syllables,sen
 first you must be clone this repository
 
 ```	bash
-git clone https://github.com/aryarte/counter_application
+git clone https://github.com/aryarte/counter-app
 ```
 
 ## USAGE
